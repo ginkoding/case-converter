@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5cbb1;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#mybg {
+  position: fixed;
+  top: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -999999;
+}
+
+header {
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  color: white;
+  margin-top: 6vh;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+textarea {
+  width: 70vw;
+  max-width: 90vw;
+  height: 50vh;
+  min-height: 50vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#upper-case,
+#lower-case,
+#proper-case,
+#sentence-case,
+#save-text-file {
+  font-size: 20px;
+  padding: 15px;
+  margin: 20px 10px 10px 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: #d39211;
+  border: none;
+}
+
+#save-text-file {
+  background-color: #a0623c;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: rgba(66, 43, 0, 0.6) 0px 0px 0px 3px;
+  transition: 0.7s;
+}
+
+#save-text-file {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  color: white;
+  background-color: #d39211;
+  margin: 50px 0 0 0;
+  padding: 5px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer p {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  transition: 0.5s;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+
+footer a:visited {
+  color: #d5cbb1;
+}
+
+footer .icon {
+  font-size: 30px;
+  padding: 10px;
+}
+
+/***************MEDIA QUERY**************/
+@media screen and (max-width: 550px) {
+  header {
+    font-size: 30px;
+    color: white;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  textarea {
+    max-width: 90vw;
+    min-height: 42vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
